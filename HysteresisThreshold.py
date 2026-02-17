@@ -1,5 +1,9 @@
 import time
 
+############################################################################
+#                       Hysteresis thresholding class                      #
+############################################################################
+
 class Hysteresis():
     """
     Hysteresis thresholding class.

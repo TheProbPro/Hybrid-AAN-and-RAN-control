@@ -2,6 +2,10 @@ from PATERAAN import PATE_RAAN
 from DIARAAN import DIA_RAAN
 import time
 
+###############################################
+#           Template of control loop          #
+###############################################
+
 if __name__ == "__main__":
     # Initialize you motors here
 

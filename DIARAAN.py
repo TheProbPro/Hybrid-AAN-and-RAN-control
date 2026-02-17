@@ -4,6 +4,14 @@ from ILC import ILC
 from ControlMode import ControlMode
 import numpy as np
 
+#################################################################################
+#                       DIA-RAAN controller implementation                      #
+# This class implements the DIA-RAAN controller, which is a torque-sign-based   #
+# AAN/RAN switching controller as described in Section 2.5.2 of the paper:      #
+# "Myoelectric and Hybrid AAN - RAN control ofexoskeleton arm".                 #
+# Written by Zi C. Wang, Victor B. Nielsen, and Xiao F. Xiong.                  # 
+#################################################################################
+
 class DIA_RAAN():
     """
     DIA-RAAN - Implements AAN/RAN switching logic based on torque sign, as described in Section 2.5.2 of the paper. 

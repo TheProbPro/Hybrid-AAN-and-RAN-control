@@ -1,16 +1,18 @@
 import numpy as np
 import numpy.linalg as la
 
-#############################################################
-#       Online Adaptive Impedance Control (OIAC) class      #
-# This class implements the OIAC controller. This code      #
-# comes from the paper: "???",
-# and is copied from the following GitHub repository:       #
-# "???".
-# The only changes from the original code is the values     #
-# self.a, self.b, and self.k, which are the parameters of   #
-# the OIAC controller.                                      #
-#############################################################
+###########################################################################################
+#                       Online Adaptive Impedance Control (OIAC) class                    #
+# This class implements the OIAC controller. This code comes from the paper:              #
+# "An Online Impedance Adaptation Controller for Decoding Skill Intelligence.             #
+# Biomimetic Intelligence and Robotics, 3(2), [100100].                                   #
+# https://doi.org/10.1016/j.birob.2023.100100",                                           #
+#                                                                                         #
+# and is copied from the following GitHub repository:                                     #
+# "https://github.com/lenonrobot/Online-Impedance-Adaptation-Control/blob/main/oiac.py".  #
+# The only changes from the original code is the values self.a, self.b, and self.k,       #
+# which are the parameters of the OIAC controller.                                        #
+###########################################################################################
 
 
 
