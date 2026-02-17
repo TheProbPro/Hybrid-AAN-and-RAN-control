@@ -12,6 +12,5 @@ This repository contains the following files:
 - Template.py               -> A template file of a control loop, showing the intended use of the controllers, and how to implement them.
 
 # Dependencies
-All requirements are in the Requirements.txt file and can be installed using the following command:
- - pip install -r requirements.txt
+All requirements are in the Requirements.txt file and can be installed using the following command: pip install -r requirements.txt.
 The only other dependency is the OIAC controller code, which has been imported from the following repository: ??? by ???.
