@@ -2,6 +2,13 @@ import numpy as np
 import math
 from scipy import interpolate
 
+######################################################################################
+#                      Iterative Learning Control (ILC) class                        #
+# This class implements a simple ILC algorithm for learning feedforward torque       #
+# profiles based on tracking error history. The ILC update is performed at the       #
+# end of each trial, and the learned feedforward is used in subsequent trials to     #
+# improve tracking performance. The learning rate and other parameters can be tuned. #
+######################################################################################
 
 class ILC():
     def __init__(self, max_trials=10, trial_duration=10.0, frequency=166.7, lr=0.1):

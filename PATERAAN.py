@@ -5,6 +5,14 @@ from ControlMode import ControlMode
 import numpy as np
 import math
 
+#################################################################################
+#                       PATE-RAAN controller implementation                     #
+# This class implements the PATE-RAAN controller, which is a performance-based  #
+# AAN/RAN switching controller as described in Section 2.5.1 of the paper:      #
+# "Myoelectric and Hybrid AAN - RAN control ofexoskeleton arm".                 #
+# Written by Zi C. Wang, Victor B. Nielsen, and Xiao F. Xiong.                  #
+#################################################################################
+
 class PATE_RAAN():
     """
     PATE-RAAN – Implements AAN/RAN switching logic based on Section 2.5.1 of the paper
