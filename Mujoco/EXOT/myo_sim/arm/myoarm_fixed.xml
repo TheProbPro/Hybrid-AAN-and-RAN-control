@@ -1,0 +1,47 @@
+<mujoco model="MyoArm_v0.01">
+
+    <include file="assets/myoarm_assets.xml" />
+    
+    <compiler meshdir=".." texturedir=".." />
+    
+    <option gravity="0 0 -9.81" timestep="0.002" />
+
+    <asset>
+        
+        <mesh file="../myo_sim/meshes/human_lowpoly_nohand.stl" name="human_body" />
+        
+        <mesh name="shoulder_connect_mesh" file="..\myo_sim\arm\Front_support_cable_amplificator.stl" />
+        
+        <mesh name="lower_connect_mesh" file="..\myo_sim\arm\Elbow_support_assembly.stl" />
+        <mesh name="hand_connect_mesh" file="..\myo_sim\arm\Hand_exoskeleton_half.stl" />
+        <mesh name="backplate_connect_mesh" file="..\myo_sim\arm\Final_exosuit_backplate.stl" />
+        <mesh name="Bottom_finger_connect_mesh" file="..\myo_sim\arm\Bottom_part.stl" />
+        <mesh name="Mid_finger_connect_mesh" file="..\myo_sim\arm\Mid_part.stl" />
+        <mesh name="Top_finger_connect_mesh" file="..\myo_sim\arm\Top_part.stl" />
+        <mesh name="Inch_Bottom_finger_connect_mesh" file="..\myo_sim\arm\Inch_Bottom_part.stl" />
+        <mesh name="Inch_top_finger_connect_mesh" file="..\myo_sim\arm\Inch_top_part.stl" />
+    </asset>
+
+    <worldbody>
+
+        <geom name="body" type="mesh" mesh="human_body" euler="0 0 3.14" contype="0" conaffinity="0" />
+        <body name="full_body" pos="-.025 0.1 1.40">
+            <include file="assets/myoarm_bodyCopy.xml" />
+        </body>
+        <!-- <site name="site_object" pos="-0.2 -0.27 1.05" size="0.05" type="sphere" rgba="1 1 0 1"/> -->
+
+
+        <body name="box" pos="-0.25 -0.27 1.14"  gravcomp="1">
+                            <!--左右 前    深度 -->
+            <!-- Freejoint allows the ball to move in 6 degrees of freedom -->
+             <!-- <include file="..\myo_sim\arm\Inch_top_part.stl" /> -->
+            <freejoint/>
+            <!-- Sphere geom for collision and visualization -->
+            <geom name="box_geom" type="box" size="0.02 0.02 0.02" rgba="1 0 0 1" mass="400" conaffinity="1" condim="3"/>
+        
+            
+        </body>
+
+    </worldbody>
+<!-- <option gravity="0 0 0"/> -->
+</mujoco>
