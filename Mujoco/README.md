@@ -1,6 +1,6 @@
 
 """
-README for RAN-Controlled Robotic Arm Simulation
+README for Robotic Arm Simulation
 ================================================
 
 Project Overview
