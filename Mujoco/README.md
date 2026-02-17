@@ -16,7 +16,7 @@ Two Control Strategies
    - Uses error thresholds (5.6°-5.7°) with dwell times for smooth transitions
    - RAN mode provides resistance during trajectory tracking when error is low
 
-2. Velocity-Based RAN Control (Second Code)
+2. Direction-Based RAN Control (Second Code)
    - Switches modes based on velocity direction
    - Positive velocity → AAN mode (assistance with ILC)
    - Negative velocity → RAN mode (resistance with OIAC only)
@@ -45,10 +45,10 @@ Installation
 Usage
 -----
 Running the Hysteresis-Based Controller:
-   python ran_hysteresis_control.py
+   python PATERAAN.py
 
 Running the Velocity-Based Controller:
-   python ran_velocity_control.py
+   python DIARAAN.py
 
 Output
 ------
@@ -70,7 +70,7 @@ RAN Resistance (Hysteresis): Base: 0.004 Nm + 0.003·|vel|
 RAN Resistance (Velocity):   Base: 0.05 Nm + 0.3·|vel|
 Switching Criteria:
    - Hysteresis: Error-based (5.6°-5.7°)
-   - Velocity: Velocity-based (0° threshold)
+   - Direction: Direction-based (0° threshold)
 Dwell Times (Hysteresis): 0.1s (both directions)
 
 Key Classes
