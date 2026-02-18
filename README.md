@@ -12,14 +12,21 @@ This repository contains the following files:
 - Template.py               -> A template file of a control loop, showing the intended use of the controllers, and how to implement them.
 Folders:
 - EMG                       -> Contains all the scripts for the emg processing described in the paper.
+
 -- EMGInterface.py          -> Contains the code that interfaces with the Trigno Control Utility (TCU).
+
 -- EMGThread.py             -> Contains the EMG processing thread running at 2000Hz.
+
 -- EMGToAngle.py            -> Contains the class that converts a EMG signal to a desired angle.
+
 -- Filtering.py             -> Contains a class with the implementation of the filters used.
+
 -- MVC.py                   -> Contains the MVC calibration script.
 
 - Mujoco                     -> Contains all the MuJoCo simulation files used for simulating the control.
+
 --
+
 --
 
 # Dependencies
