@@ -13,16 +13,15 @@ This repository contains the following files:
 
 Folders:
 - EMG                       -> Contains all the scripts for the emg processing described in the paper.
--> EMGInterface.py          -> Contains the code that interfaces with the Trigno Control Utility (TCU).
--> EMGThread.py             -> Contains the EMG processing thread running at 2000Hz.
--> EMGToAngle.py            -> Contains the class that converts a EMG signal to a desired angle.
--> Filtering.py             -> Contains a class with the implementation of the filters used.
--> MVC.py                   -> Contains the MVC calibration script.
--> Mujoco                     -> Contains all the MuJoCo simulation files used for simulating the control.
+- > EMGInterface.py          -> Contains the code that interfaces with the Trigno Control Utility (TCU).
+- > EMGThread.py             -> Contains the EMG processing thread running at 2000Hz.
+- > EMGToAngle.py            -> Contains the class that converts a EMG signal to a desired angle.
+- > Filtering.py             -> Contains a class with the implementation of the filters used.
+- > MVC.py                   -> Contains the MVC calibration script.
 
---
-
---
+- Mujoco                     -> Contains all the MuJoCo simulation files used for simulating the control.
+- >
+- >
 
 # Dependencies
 All requirements are in the Requirements.txt file and can be installed using the following command: pip install -r requirements.txt.
