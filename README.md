@@ -19,9 +19,7 @@ Folders:
 - > Filtering.py             -> Contains a class with the implementation of the filters used.
 - > MVC.py                   -> Contains the MVC calibration script.
 
-- Mujoco                     -> Contains all the MuJoCo simulation files used for simulating the control.
-- >
-- >
+- Mujoco                     -> Contains all the MuJoCo simulation files used for simulating the control. More details in the README.txt in the folder.
 
 # Dependencies
 All requirements are in the Requirements.txt file and can be installed using the following command: pip install -r requirements.txt.
